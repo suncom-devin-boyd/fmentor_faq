@@ -1,0 +1,99 @@
+body{
+    background-color: hsl(275, 100%, 97%);
+    font-family: 'Work Sans', sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background: url("./assets/images/background-pattern-desktop.svg") no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+  }
+
+  small {
+    line-height: 18px;
+  }
+
+.faq-container{
+    width: 80%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex-vert-center{
+    display: flex;
+    align-items: center;
+}
+
+.flex-vert-center > h1{
+    padding-left: 1rem;
+}
+
+.flex-vert-center > img{
+    transform: scale(0.65);
+}
+
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+.question-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-container > p {
+    font-weight: bold;
+}
+
+.question-container > p:hover {
+    color: hsl(292, 16%, 49%);
+    cursor: pointer;
+}
+  
+
+.question-container > img {
+    margin-left: 1rem;
+}
+
+.answer {
+    display: none;
+}
+
+@media only screen and (min-width: 400px) {
+    .faq-container {
+      width: 40%;
+    }
+  }
+
+@media only screen and (min-width: 800px) {
+    .faq-container {
+      width: 30%;
+    }
+  }
+
+@media only screen and (min-width: 1000px) {
+    .faq-container {
+      width: 25%;
+    }
+  }
